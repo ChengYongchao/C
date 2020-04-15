@@ -8,4 +8,5 @@ int main(int argc, char const* argv[])
 	//q1_7();
 	//q1_8();
 	//test();
+	q2_1();
 }
