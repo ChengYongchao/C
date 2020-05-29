@@ -1,6 +1,13 @@
 #include<stdio.h>
+#include <stdlib.h>
+#include<windows.h> 
 
+struct MainWindow
+{
+	int width;
+};
 
+struct MainWindow mainWindow = { 50 };
 void printMenu();
 int add();
 int reversePrint();
@@ -12,6 +19,7 @@ int main(int argc, char* argv[])
 		int select;
 		printMenu();
 		scanf("%d", &select);
+		system("cls");
 		switch (select)
 		{
 		case -1:
@@ -22,9 +30,14 @@ int main(int argc, char* argv[])
 		case 2:
 			reversePrint();
 			break;
+		case 3:
+			runBall();
+			break;
 		default:
 			break;
 		}
+		Sleep(1000);
+		system("cls");
 	}
 }
 
@@ -34,6 +47,8 @@ void printMenu()
 	printf("*                            CTest                              *\n");
 	printf("*                            1.¼Ó·¨                             *\n");
 	printf("*                            2.ÄæÐòÊä³ö                         *\n");
+	printf("*                            3.Åö×²Çò                           *\n");
+	printf("=================================================================\n");
 	printf("ÇëÑ¡Ôñ£º\n");
 }
 
