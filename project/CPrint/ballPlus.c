@@ -4,9 +4,8 @@
 #include"Ball.h"
 #include"break.h"
 
-
 struct GameWindow gWindow = { 50,20 };
-struct Ball ball = { 10,10,'x',BallXRight, BallYUp};
+struct Ball ball = { 10,10,'x',BallXRight, BallYUp };
 
 
 
@@ -113,7 +112,7 @@ void change()
 		ball.xAction = BallXRight;
 	}
 	//3.ио╠ъ╫Г
-	if(ball.y == gWindow.y -1)
+	if (ball.y == gWindow.y - 1)
 	{
 		ball.yAction = BallYDown;
 
@@ -126,7 +125,7 @@ void change()
 
 void runBall()
 {
-	
+
 	while (1)
 	{
 		if (breakFromChoose())

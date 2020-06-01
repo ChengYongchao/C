@@ -36,7 +36,6 @@ int main(int argc, char* argv[])
 		default:
 			break;
 		}
-		Sleep(1000);
 		system("cls");
 	}
 }
